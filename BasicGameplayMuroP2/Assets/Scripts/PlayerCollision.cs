@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class DetectCollision : MonoBehaviour
+public class PlayerCollision : MonoBehaviour
 {
+
     private ScoreManager scoreManager;
 
     void Start()
@@ -20,23 +20,14 @@ public class DetectCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("obstacles"))
         {
-            Destroy(gameObject);
-        }
-        else
-        {
-
-            Destroy(other.gameObject);
-
-            // Increase the score
-            if (gameObject.CompareTag("Food") && scoreManager != null)
+            if (scoreManager != null)
             {
-                scoreManager.IncreaseScore(1);
+                scoreManager.DecreaseLives(1);
             }
 
-            Destroy(gameObject);
         }
     }
-
 }
+

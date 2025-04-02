@@ -935,6 +935,7 @@ GameObject:
   - component: {fileID: 4827950685092040400}
   - component: {fileID: 3454473443286262610}
   - component: {fileID: 8478715979459905641}
+  - component: {fileID: 1501819192281360272}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -1072,6 +1073,18 @@ BillboardRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Billboard: {fileID: 0}
+--- !u!114 &1501819192281360272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4956586519290708192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966e900b5d1d7d2459210ec087cc6bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5149542154364715769
 GameObject:
   m_ObjectHideFlags: 0
